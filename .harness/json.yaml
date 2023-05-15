@@ -43,40 +43,30 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Bash
-                    command: |
+                    command: |-
                       #!/bin/bash
-
                       # Install jq if necessary
                       sudo apt-get install jq -y
-
                       # Change directory to json-harness
                       cd json-harness/
-
                       # Read the JSON file content
                       fileContent=$(cat json)
-
                       # Check the value of "a" and update if necessary
                       if [[ $(echo "$fileContent" | jq -r '.a') != "1" ]]; then
                         fileContent=$(echo "$fileContent" | jq '.a = "1"')
                       fi
-
                       # Check the presence of "b" and add if necessary
                       if [[ $(echo "$fileContent" | jq -r 'has("b")') == "false" ]]; then
                         fileContent=$(echo "$fileContent" | jq '.b = "1"')
                       fi
-
                       # Write the modified content back to the JSON file
                       echo "$fileContent" > json
-
                       # Stage the modified JSON file
                       git add .
-
                       # Configuring Git settings
                       git config --global user.name "BrendaMohan"
                       git config --global user.email "mohanbrenda@gmail.com"
-
                       # Commit the changes
                       git commit -m "Update JSON file"
-
                       # Push the changes back to the repository
                       git push
