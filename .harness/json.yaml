@@ -69,4 +69,5 @@ pipeline:
                       # Commit the changes
                       git commit -m "Update JSON file"
                       # Push the changes back to the repository
-                      git push
+                      # Push the changes back to the repository
+                      git push origin main
