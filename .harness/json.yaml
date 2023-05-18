@@ -41,7 +41,7 @@ pipeline:
           - name: service
             type: String
             description: ""
-            value: nginx
+            value: tomcat
           - name: tag
             type: String
             description: ""
