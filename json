@@ -1,10 +1,10 @@
 [
   {
-    "service": "$service_name",
-    "tag": "$service_tag"
+    "service": "nginx",
+    "tag": "latest"
   },
   {
-    "service": "$service_name",
-    "tag": "$service_tag"
+    "service": "nginx",
+    "tag": "latest"
   }
 ]
