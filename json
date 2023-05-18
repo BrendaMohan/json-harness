@@ -1,10 +1,10 @@
 [
   {
-    "service": "nginx",
+    "service": "tomcat",
     "tag": "latest"
   },
   {
-    "service": "nginx",
+    "service": "tomcat",
     "tag": "latest"
   }
 ]
