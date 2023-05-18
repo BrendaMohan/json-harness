@@ -1,4 +1,10 @@
-{ 
-  "a":"0", 
-  "c":"0"
-}
+[
+  {
+    "service": "$service_name",
+    "tag": "$service_tag"
+  },
+  {
+    "service": "$service_name",
+    "tag": "$service_tag"
+  }
+]
