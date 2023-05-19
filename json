@@ -1,1 +1,10 @@
-[{"service": "tomcat", "tag": "latest"}]
+[
+  {
+    "service": "tomcat",
+    "tag": "latest"
+  },
+  {
+    "service": "nginx",
+    "tag": "latest"
+  }
+]
