@@ -1,5 +1,10 @@
-{
-  "a": 0,
-  "c": 0
-}
-
+[
+  {
+    "service": "nginx",
+    "tag": "latest"
+  },
+  {
+    "service": "nginx",
+    "tag": "latest"
+  }
+]
